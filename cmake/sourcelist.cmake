@@ -152,6 +152,10 @@ set(SOURCES
 	include/RE/B/BGSOutfit.h
 	include/RE/B/BGSOverridePackCollection.h
 	include/RE/B/BGSPackageDataBool.h
+	include/RE/B/BGSPackageDataFloat.h
+	include/RE/B/BGSPackageDataInt.h
+	include/RE/B/BGSPackageDataSingleRef.h
+	include/RE/B/BGSPackageDataTargetSelector.h 
 	include/RE/B/BGSPackageDataLocation.h
 	include/RE/B/BGSPackageDataPointerTemplate.h
 	include/RE/B/BGSPerk.h
@@ -1578,12 +1582,14 @@ set(SOURCES
 	include/RE/T/TESOpenCloseEvent.h
 	include/RE/T/TESPackage.h
 	include/RE/T/TESPackageData.h
+	include/RE/T/TESPackageEvent.h 
 	include/RE/T/TESPlayerBowShotEvent.h
 	include/RE/T/TESProcessor.h
 	include/RE/T/TESProduceForm.h
 	include/RE/T/TESQualityForm.h
 	include/RE/T/TESQuest.h
-	include/RE/T/TESQuestStageEvent.h
+	include/RE/T/TESQuestInitEvent.h 
+	include/RE/T/TESQuestStageEvent.h 
 	include/RE/T/TESQuestStageItem.h
 	include/RE/T/TESQuestStartStopEvent.h
 	include/RE/T/TESRace.h
