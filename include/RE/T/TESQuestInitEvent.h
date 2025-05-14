@@ -6,7 +6,7 @@ namespace RE
 	{
 	public:
 		// members
-		FormID	formID;	// 00
+		FormID formID;  // 00
 	};
 	static_assert(sizeof(TESQuestInitEvent) == 0x4);
 }

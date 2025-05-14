@@ -2,9 +2,9 @@
 
 namespace RE
 {
-    class TESObjectREFR;
+	class TESObjectREFR;
 
-    struct TESPackageEvent
+	struct TESPackageEvent
 	{
 		enum class PackageEventType
 		{
@@ -13,10 +13,9 @@ namespace RE
 			kUpdate = 2
 		};
 		// members
-		RE::TESObjectREFR* owner;			// 00
-		RE::FormID packageFormId;			// 08
-		PackageEventType packageEventType;	// 0C
+		RE::TESObjectREFR* owner;             // 00
+		RE::FormID         packageFormId;     // 08
+		PackageEventType   packageEventType;  // 0C
 	};
 	static_assert(sizeof(TESPackageEvent) == 0x10);
 }
-    
