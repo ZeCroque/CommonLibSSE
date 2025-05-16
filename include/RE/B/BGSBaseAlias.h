@@ -1,6 +1,7 @@
 #pragma once
 
 #include "RE/B/BSFixedString.h"
+#include "RE/M/MemoryManager.h"
 
 namespace RE
 {
@@ -72,6 +73,12 @@ namespace RE
 		void                               SetEssential(bool a_set);
 		void                               SetProtected(bool a_set);
 
+		static BGSBaseAlias* Create(std::size_t a_size, std::uintptr_t a_vtbl);
+		template <class T>
+		static T* Create();
+
+		TES_HEAP_REDEFINE_NEW();
+
 		// members
 		BSFixedString                          aliasName;    // 08 - ALID
 		TESQuest*                              owningQuest;  // 10
@@ -82,4 +89,10 @@ namespace RE
 		std::uint32_t                          pad24;        // 24
 	};
 	static_assert(sizeof(BGSBaseAlias) == 0x28);
+
+	template <class T>
+	T* BGSBaseAlias::Create()
+	{
+		return static_cast<T*>(Create(sizeof(T), T::VTABLE[0].address()));
+	}
 }
