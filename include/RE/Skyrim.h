@@ -161,6 +161,7 @@
 #include "RE/B/BGSPackageDataPointerTemplate.h"
 #include "RE/B/BGSPackageDataSingleRef.h"
 #include "RE/B/BGSPackageDataTargetSelector.h"
+#include "RE/B/BGSPackageDataTopic.h"
 #include "RE/B/BGSPerk.h"
 #include "RE/B/BGSPerkEntry.h"
 #include "RE/B/BGSPerkRankArray.h"
