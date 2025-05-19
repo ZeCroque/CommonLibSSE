@@ -909,7 +909,6 @@ namespace RE
 
 		union GlobalOrFloat
 		{
-			GlobalOrFloat();
 			~GlobalOrFloat() = default;
 
 			TESGlobal* g;

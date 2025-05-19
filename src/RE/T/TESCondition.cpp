@@ -9,10 +9,6 @@ namespace RE
 		params{ nullptr }
 	{}
 
-	CONDITION_ITEM_DATA::GlobalOrFloat::GlobalOrFloat() :
-		g(nullptr)
-	{}
-
 	CONDITION_ITEM_DATA::Flags::Flags() :
 		isOR(false),
 		usesAliases(false),
