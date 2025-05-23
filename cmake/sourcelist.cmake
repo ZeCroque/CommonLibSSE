@@ -1804,6 +1804,7 @@ set(SOURCES
 	src/RE/B/BSShaderProperty.cpp
 	src/RE/B/BSShaderTextureSet.cpp
 	src/RE/B/BSSoundHandle.cpp
+	src/RE/B/BSStorage.cpp
 	src/RE/B/BSStringPool.cpp
 	src/RE/B/BSSystemFileStorage.cpp
 	src/RE/B/BSTArray.cpp
@@ -1928,6 +1929,7 @@ set(SOURCES
 	src/RE/I/Inventory3DManager.cpp
 	src/RE/I/InventoryChanges.cpp
 	src/RE/I/InventoryEntryData.cpp
+	src/RE/I/IStore.cpp
 	src/RE/I/ItemCrafted.cpp
 	src/RE/I/ItemHarvested.cpp
 	src/RE/I/ItemList.cpp

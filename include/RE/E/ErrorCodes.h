@@ -17,4 +17,11 @@ namespace RE
 			kUnsupported = 8
 		};
 	}
+
+	namespace BSStorageDefs
+	{
+		enum class ErrorCode
+		{
+		};
+	}
 }

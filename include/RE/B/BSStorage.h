@@ -41,6 +41,8 @@ namespace RE
 		uint16_t      unk0E;      // 0E
 		UnkData*      unk10;      // 10
 		std::uint64_t unk18;      // 18
+	private:
+		void dtor();
 	};
 	static_assert(sizeof(BSStorage) == 0x20);
 }
