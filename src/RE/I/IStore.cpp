@@ -17,7 +17,7 @@ namespace RE
 		BSStorageDefs::ErrorCode IStore::write()
 		{
 			using func_t = decltype(&IStore::write);
-			static REL::Relocation<func_t> func{  REL::Offset(0x91A090).address() };
+			static REL::Relocation<func_t> func{ REL::Offset(0x91A090).address() };
 			return func(this);
 		}
 
