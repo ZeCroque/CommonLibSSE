@@ -1921,6 +1921,7 @@ set(SOURCES
 	src/RE/I/INISettingCollection.cpp
 	src/RE/I/IObjectHandlePolicy.cpp
 	src/RE/I/IStackCallbackFunctor.cpp
+	src/RE/I/IStore.cpp
 	src/RE/I/IVirtualMachine.cpp
 	src/RE/I/IngredientItem.cpp
 	src/RE/I/InputEvent.cpp
@@ -1929,7 +1930,6 @@ set(SOURCES
 	src/RE/I/Inventory3DManager.cpp
 	src/RE/I/InventoryChanges.cpp
 	src/RE/I/InventoryEntryData.cpp
-	src/RE/I/IStore.cpp
 	src/RE/I/ItemCrafted.cpp
 	src/RE/I/ItemHarvested.cpp
 	src/RE/I/ItemList.cpp
