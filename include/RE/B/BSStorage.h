@@ -41,6 +41,8 @@ namespace RE
 		uint16_t     unk0E;           // 0E
 		WriteBuffer* buffer;          // 10
 		bool         bWriteToBuffer;  // 18
+	private:
+		void dtor();
 	};
 	static_assert(sizeof(BSStorage) == 0x20);
 }

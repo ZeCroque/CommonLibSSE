@@ -25,6 +25,10 @@ namespace RE
 			virtual bool                 HasOpenFile(void) = 0;             // 09
 			virtual bool                 FileIsGood(void) = 0;              // 0A
 			virtual void                 Unk_0B(void) = 0;                  // 0B
+
+		private:
+			void dtor();
+			BSStorageDefs::ErrorCode write();
 		};
 		static_assert(sizeof(IStore) == 0x20);
 	}
