@@ -28,7 +28,7 @@ namespace RE
 
 		private:
 			void                     dtor();
-			BSStorageDefs::ErrorCode write();
+			BSStorageDefs::ErrorCode write(std::size_t a_numBytes, const std::byte* a_bytes);
 		};
 		static_assert(sizeof(IStore) == 0x20);
 	}

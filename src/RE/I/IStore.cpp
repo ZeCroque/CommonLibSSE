@@ -11,14 +11,14 @@ namespace RE
 
 		BSStorageDefs::ErrorCode IStore::Write(std::size_t a_numBytes, const std::byte* a_bytes)
 		{
-			return write();
+			return write(a_numBytes, a_bytes);
 		}
 
-		BSStorageDefs::ErrorCode IStore::write()
+		BSStorageDefs::ErrorCode IStore::write(std::size_t a_numBytes, const std::byte* a_bytes)
 		{
 			using func_t = decltype(&IStore::write);
 			static REL::Relocation<func_t> func{ REL::Offset(0x91A090).address() };
-			return func(this);
+			return func(this, a_numBytes, a_bytes);
 		}
 
 		void IStore::dtor()
