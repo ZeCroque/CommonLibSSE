@@ -133,12 +133,13 @@ namespace RE
 			union value_union
 			{
 				value_union() :
-					value() {}
+					buffer{} {}
 
-				~value_union() { value.~value_type(); }
+				// the owning entry_type is responsible for destroying value (see entry_type::destroy)
+				~value_union() {}
 
 				value_type value;
-				std::byte  buffer[sizeof(value_type)]{ static_cast<std::byte>(0) };
+				std::byte  buffer[sizeof(value_type)];
 			};
 			value_union value_data;
 			entry_type* next{ nullptr };
