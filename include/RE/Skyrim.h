@@ -1369,6 +1369,7 @@
 #include "RE/H/hkpWorldRayCastInput.h"
 #include "RE/H/hkpWorldRayCastOutput.h"
 #include "RE/H/hkpWorldRayCaster.h"
+#include "RE/I/IAITarget.h"
 #include "RE/I/IAIWorldLocationHandle.h"
 #include "RE/I/IAnimationClipLoaderSingleton.h"
 #include "RE/I/IAnimationGraphManagerHolder.h"

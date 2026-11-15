@@ -1,11 +1,12 @@
 #pragma once
 
 #include "BGSPackageDataPointerTemplate.h"
+#include "RE/I/IAITarget.h"
 #include "RE/T/TESPackage.h"
 
 namespace RE
 {
-	class BGSPackageDataSingleRef : public BGSPackageDataPointerTemplate<IPackageData, PackageTarget>
+	class BGSPackageDataSingleRef : public BGSPackageDataPointerTemplate<IAITarget, PackageTarget>
 	{
 	public:
 		inline static constexpr auto RTTI = RE::RTTI_BGSPackageDataRef;
@@ -19,5 +20,7 @@ namespace RE
 		bool GetDataAsString(RE::BSString* a_dst) const override;  // 0A
 		void Unk_0C(void) override;                                // 0C
 	};
-	static_assert(sizeof(BGSPackageDataSingleRef) == 0x18);
+	static_assert(offsetof(BGSPackageDataSingleRef, data) == 0x10);
+	static_assert(offsetof(BGSPackageDataSingleRef, pointer) == 0x18);
+	static_assert(sizeof(BGSPackageDataSingleRef) == 0x20);
 }
