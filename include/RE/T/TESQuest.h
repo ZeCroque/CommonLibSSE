@@ -273,8 +273,7 @@ namespace RE
 		QUEST_DATA                                           data;                                     // 0D8 - DNAM
 		QuestEvent                                           eventID;                                  // 0E0 - ENAM
 		std::uint32_t                                        pad0E4;                                   // 0E4
-		TESQuestStage*                                       initialStage;                             // 0E8
-		BSSimpleList<TESQuestStage*>*                        otherStages;                              // 0F0
+		BSSimpleList<TESQuestStage*>                         stages;                                   // 0E8 - inline list head (item @ 0E8, next @ 0F0)
 		BSSimpleList<BGSQuestObjective*>                     objectives;                               // 0F8
 		TESCondition                                         objConditions;                            // 108
 		TESCondition                                         storyManagerConditions;                   // 110
