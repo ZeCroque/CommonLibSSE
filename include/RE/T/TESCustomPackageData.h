@@ -14,6 +14,9 @@ namespace RE
 
 	struct BGSPackageDataList
 	{
+		void Assign(const BGSPackageDataList& a_other);  // Replaces the content with a deep copy of a_other: every IPackageData is recreated from its type name then assigned, uids and nextUID are copied
+
+		// members
 		IPackageData** data;      // 00
 		std::int8_t*   uids;      // 08
 		std::uint16_t  dataSize;  // 10

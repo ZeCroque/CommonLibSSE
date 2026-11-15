@@ -1367,6 +1367,7 @@ set(SOURCES
 	include/RE/H/hkpWorldRayCastInput.h
 	include/RE/H/hkpWorldRayCastOutput.h
 	include/RE/H/hkpWorldRayCaster.h
+	include/RE/I/IAITarget.h
 	include/RE/I/IAIWorldLocationHandle.h
 	include/RE/I/IAnimationClipLoaderSingleton.h
 	include/RE/I/IAnimationGraphManagerHolder.h
@@ -2580,6 +2581,7 @@ set(SOURCES
 	src/RE/T/TESClimate.cpp
 	src/RE/T/TESCondition.cpp
 	src/RE/T/TESContainer.cpp
+	src/RE/T/TESCustomPackageData.cpp
 	src/RE/T/TESDataHandler.cpp
 	src/RE/T/TESDescription.cpp
 	src/RE/T/TESFaction.cpp
