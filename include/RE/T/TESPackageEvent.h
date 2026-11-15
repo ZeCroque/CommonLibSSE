@@ -10,7 +10,7 @@ namespace RE
 		{
 			kBegin = 0,
 			kEnd = 1,
-			kUpdate = 2
+			kChange = 2
 		};
 		// members
 		RE::TESObjectREFR* owner;             // 00
